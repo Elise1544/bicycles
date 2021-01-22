@@ -1,13 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
+  <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+  <title>Магазин велосипедов</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <header>
+    <nav>
+      <img src="img/logo.svg" width="68" height="20" alt="Логотип магазина">
+      <ul>
+        <li><a>О нас</a></li>
+        <li><a>Виды велосипедов</a></li>
+        <li><a>Видео про велосипеды</a></li>
+        <li><a>Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="visually-hidden">Магазин велосипедов</h1>
+    <section>
+      <img src="img/logo.svg" width="68" height="20" alt="Логотип магазина">
+      <h2>Мы продаем велосипеды</h2>
+      <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+    </section>
+    <section>
+      <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+      <form action="">
+        <label>
+          <input type="text" name="name" placeholder="Введите Ваше Имя" required="">
+        </label>
+        <label>
+          <input type="tel" pattern="[+,0-9]{11,12}" name="phone" placeholder="Введите Ваш номер телефона" required="">
+        </label>
+        <button type="submit">Подобрать велосипед мечты</button>
+      </form>
+    </section>
+
+    <section>
+      <h3>Несколько фактов о нас</h3>
+      <ol>
+        <li>Самый широкий выбор велосипедов!</li>
+        <li>Доставка велосипедов по всей России!</li>
+        <li>Большой выбор крутых аксессуаров!</li>
+        <li>Профессиональные консультации!</li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Виды велосипедов</h3>
+      <ul>
+        <li>
+          <picture>
+            <source media="(max-width: 1023px)" type="image/webp" srcset="img/road-bike-mobile.webp 1x, img/road-bike-mobile@2x.webp 2x">
+            <source media="(max-width: 1023px)" srcset="img/road-bike-mobile.jpg 1x, img/road-bike-mobile@2x.jpg 2x">
+            <source type="image/webp" srcset="img/road-bike.webp">
+            <img src="img/road-bike.jpg" srcset="img/road-bike@2x.jpg 2x" width="342" height="503" alt="Фото дорожного велосипеда">
+          </picture>
+          <p>Дорожный велосипед</p>
+        </li>
+        <li>
+          <picture>
+            <source media="(max-width: 1023px)" type="image/webp" srcset="img/mountain-bike-mobile.webp 1x, img/mountain-bike-mobile@2x.webp 2x">
+            <source media="(max-width: 1023px)" srcset="img/mountain-bike-mobile.jpg 1x, img/mountain-bike-mobile@2x.jpg 2x">
+            <source type="image/webp" srcset="img/mountain-bike.webp">
+            <img src="img/mountain-bike.jpg" srcset="img/mountain-bike@2x.jpg 2x" width="342" height="566" alt="Фото горного велосипеда">
+          </picture>
+          <p>Горный велосипед</p>
+        </li>
+        <li>
+          <picture>
+            <source media="(max-width: 1023px)" type="image/webp" srcset="img/children-bike-mobile.webp 1x, img/children-bike-mobile@2x.webp 2x">
+            <source media="(max-width: 1023px)" srcset="img/children-bike-mobile.jpg 1x, img/children-bike-mobile@2x.jpg 2x">
+            <source type="image/webp" srcset="img/children-bike.webp">
+            <img src="img/children-bike.jpg" srcset="img/children-bike@2x.jpg 2x" width="342" height="513" alt="Фото детского велосипеда">
+          </picture>
+          <p>Детский велосипед</p>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Видео про велосипеды</h3>
+      <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+      <div>
+        <picture>
+          <source media="(max-width: 767px)" type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
+          <source media="(max-width: 767px)" srcset="img/video-mobile.jpg 1x, img/video-mobile@2x.jpg 2x">
+          <source media="(max-width: 1023px)" type="image/webp" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+          <source media="(max-width: 1023px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <source type="image/webp" srcset="img/video.webp 1x, img/video@2x.webp 2x">
+          <img src="img/video.jpg" srcset="img/video@2x.jpg" width="929" height="522" alt="Видео про велосипеды">
+        </picture>
+        <video width="929" height="522"></video>
+        <button type="button">
+          <svg role="img" width="65" height="65">
+            <use xlink:href="img/sprite.svg#play"></use>
+          </svg>
+          <span class="visually-hidden">Запустить видео</span>
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <h3>Как нас найти?</h3>
+      <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+      <picture>
+        <source media="(max-width: 767px)" type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+        <source media="(max-width: 767px)" srcset="img/map-mobile.jpg 1x, img/map-mobile@2x.jpg 2x">
+        <source media="(max-width: 1023px)" type="image/webp" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+        <source media="(max-width: 1023px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+        <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x">
+        <img src="img/map.jpg" srcset="img/map@2x.jpg 2x" width="957" height="530" alt="Наш адрес: Санкт-Петербург, ул. Большая Конюшенная, д. 19">
+      </picture>
+    </section>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="mailto: puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a></li>
+      <li><a href="tel:+749978468446">+7 (499) -784-684-46</a></li>
+    </ul>
+  </footer>
 </body>
+
 </html>
