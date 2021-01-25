@@ -3,35 +3,34 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Магазин велосипедов</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="../fonts/open-sans-v18-latin-regular.woff2" as="font" crossorigin="anonymous">
 </head>
 
-<body>
-  <header>
-    <nav>
-      <img src="img/logo.svg" width="68" height="20" alt="Логотип магазина">
-      <ul>
-        <li><a>О нас</a></li>
-        <li><a>Виды велосипедов</a></li>
-        <li><a>Видео про велосипеды</a></li>
-        <li><a>Контакты</a></li>
+<body class="page">
+  <header class="page__header">
+    <nav class="nav">
+      <img class="nav__logo logo" src="img/logo.svg" width="68" height="20" alt="Логотип магазина">
+      <ul class="nav__list">
+        <li><a href="#facts">О нас</a></li>
+        <li><a href="#types">Виды велосипедов</a></li>
+        <li><a href="#video">Видео про велосипеды</a></li>
+        <li><a href="#contacts">Контакты</a></li>
       </ul>
     </nav>
-  </header>
 
-  <main>
-    <h1 class="visually-hidden">Магазин велосипедов</h1>
-    <section>
-      <img src="img/logo.svg" width="68" height="20" alt="Логотип магазина">
+    <div class="main-information">
+      <img class="logo" src="img/logo.svg" width="68" height="20" alt="Логотип магазина">
       <h2>Мы продаем велосипеды</h2>
       <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-    </section>
-    <section>
-      <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-      <form action="">
+    </div>
+
+    <div class="form-section">
+      <h3 class="visually-hidden">Форма для подбора велосипеда</h3>
+      <p class="form-section__description">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+      <form class="form" action="https://echo.htmlacademy.ru" method="GET">
         <label>
           <input type="text" name="name" placeholder="Введите Ваше Имя" required="">
         </label>
@@ -40,11 +39,15 @@
         </label>
         <button type="submit">Подобрать велосипед мечты</button>
       </form>
-    </section>
+    </div>
+  </header>
 
-    <section>
-      <h3>Несколько фактов о нас</h3>
-      <ol>
+  <main class="page__main">
+    <h1 class="visually-hidden">Магазин велосипедов</h1>
+
+    <section class="facts" id="facts">
+      <h3 class="facts__title">Несколько фактов о нас</h3>
+      <ol class="facts__list">
         <li>Самый широкий выбор велосипедов!</li>
         <li>Доставка велосипедов по всей России!</li>
         <li>Большой выбор крутых аксессуаров!</li>
@@ -52,32 +55,32 @@
       </ol>
     </section>
 
-    <section>
-      <h3>Виды велосипедов</h3>
-      <ul>
-        <li>
+    <section class="types" id="types">
+      <h3 class="types__title">Виды велосипедов</h3>
+      <ul class="types__list kinds">
+        <li class="kinds__item">
           <picture>
             <source media="(max-width: 1023px)" type="image/webp" srcset="img/road-bike-mobile.webp 1x, img/road-bike-mobile@2x.webp 2x">
             <source media="(max-width: 1023px)" srcset="img/road-bike-mobile.jpg 1x, img/road-bike-mobile@2x.jpg 2x">
-            <source type="image/webp" srcset="img/road-bike.webp">
+            <source type="image/webp" srcset="img/road-bike.webp 1x, img/road-bike@2x.webp 2x">
             <img src="img/road-bike.jpg" srcset="img/road-bike@2x.jpg 2x" width="342" height="503" alt="Фото дорожного велосипеда">
           </picture>
           <p>Дорожный велосипед</p>
         </li>
-        <li>
+        <li class="kinds__item">
           <picture>
             <source media="(max-width: 1023px)" type="image/webp" srcset="img/mountain-bike-mobile.webp 1x, img/mountain-bike-mobile@2x.webp 2x">
             <source media="(max-width: 1023px)" srcset="img/mountain-bike-mobile.jpg 1x, img/mountain-bike-mobile@2x.jpg 2x">
-            <source type="image/webp" srcset="img/mountain-bike.webp">
+            <source type="image/webp" srcset="img/mountain-bike.webp 1x, img/mountain-bike@2x.webp 2x">
             <img src="img/mountain-bike.jpg" srcset="img/mountain-bike@2x.jpg 2x" width="342" height="566" alt="Фото горного велосипеда">
           </picture>
           <p>Горный велосипед</p>
         </li>
-        <li>
+        <li class="kinds__item">
           <picture>
             <source media="(max-width: 1023px)" type="image/webp" srcset="img/children-bike-mobile.webp 1x, img/children-bike-mobile@2x.webp 2x">
             <source media="(max-width: 1023px)" srcset="img/children-bike-mobile.jpg 1x, img/children-bike-mobile@2x.jpg 2x">
-            <source type="image/webp" srcset="img/children-bike.webp">
+            <source type="image/webp" srcset="img/children-bike.webp 1x, img/children-bike@2x.webp 2x">
             <img src="img/children-bike.jpg" srcset="img/children-bike@2x.jpg 2x" width="342" height="513" alt="Фото детского велосипеда">
           </picture>
           <p>Детский велосипед</p>
@@ -85,10 +88,11 @@
       </ul>
     </section>
 
-    <section>
-      <h3>Видео про велосипеды</h3>
-      <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
-      <div>
+    <section class="video" id="video">
+      <h3 class="video__title">Видео про велосипеды</h3>
+      <p class="video__description">В этом видео мы подробно расскажем про<br> особенности выбора велосипеда для себя.
+      </p>
+      <div class="video__block poster">
         <picture>
           <source media="(max-width: 767px)" type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
           <source media="(max-width: 767px)" srcset="img/video-mobile.jpg 1x, img/video-mobile@2x.jpg 2x">
@@ -107,9 +111,9 @@
       </div>
     </section>
 
-    <section>
+    <section class="location" id="contacts">
       <h3>Как нас найти?</h3>
-      <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+      <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая<br> Конюшенная, д. 19</p>
       <picture>
         <source media="(max-width: 767px)" type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
         <source media="(max-width: 767px)" srcset="img/map-mobile.jpg 1x, img/map-mobile@2x.jpg 2x">
@@ -121,10 +125,24 @@
     </section>
   </main>
 
-  <footer>
-    <ul>
-      <li><a href="mailto: puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a></li>
-      <li><a href="tel:+749978468446">+7 (499) -784-684-46</a></li>
+  <footer class="page__footer contacts">
+    <ul class="contacts__list">
+      <li>
+        <a href="mailto:puteshestviemechta@gmail.ru">
+          <svg class="mail" role="img" width="26" height="20" fill="none">
+            <use xlink:href="img/sprite.svg#mail"></use>
+          </svg>
+          <span>puteshestviemechta@gmail.ru</span>
+        </a>
+      </li>
+      <li>
+        <a href="tel:+749978468446">
+          <svg class="phone" role="img" width="22" height="22" fill="none">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+          <span>+7 (499) -784-684-46</span>
+        </a>
+      </li>
     </ul>
   </footer>
 </body>

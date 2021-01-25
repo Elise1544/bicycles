@@ -1,0 +1,40 @@
+.contacts {
+  padding: 20px 18%;
+}
+
+.contacts__list {
+  list-style: none;
+
+  display: flex;
+
+  margin: 0 auto;
+  margin-left: 14%;
+
+  padding: 0;
+  text-align: center;
+
+}
+
+.contacts__list li {
+  margin-left: 66px;
+}
+
+.contacts__list a {
+  display: inline-block;
+  position: relative;
+
+  padding: 15px;
+  padding-left: 45px;
+}
+
+.mail {
+  position: absolute;
+  top: 16px;
+  left: 2px;
+}
+
+.phone {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+}

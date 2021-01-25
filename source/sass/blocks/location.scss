@@ -1,0 +1,29 @@
+.location {
+  margin-top: -192px;
+  padding-top: 220px;
+
+  background-color: $white;
+
+  text-align: center;
+}
+
+.location h3 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+
+  color: $titles;
+}
+
+.location p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 31px;
+
+  color: $black-light;
+}
+
+.location img {
+  margin-top: 23px;
+}
