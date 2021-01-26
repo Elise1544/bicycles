@@ -1,11 +1,40 @@
 .form-section {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
 
-  margin-left: 153px;
-  margin-top: 219px;
+  position: absolute;
+  top: 298px;
+  right: 242px;
+  width: 28%;
 
-  width: 36%;
+  // margin-left: 144px;
+  // margin-top: 219px;
+
+  // width: 37%;
+
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    position: static;
+    margin: 0;
+    padding: 46px;
+
+    width: 100%;
+
+    background-color: $white;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 45px 0;
+  }
+}
+
+.form-section br {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .form-section p {
@@ -14,8 +43,15 @@
   font-weight: 600;
   font-size: 17px;
   line-height: 28px;
-  text-align: center;
-  letter-spacing: -0.005em;
+  letter-spacing: 0.17px;
 
   color: $white;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+
+    color: $black;
+  }
 }

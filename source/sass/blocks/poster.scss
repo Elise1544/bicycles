@@ -2,19 +2,31 @@
   margin-top: 55px;
 
   position: relative;
+
+  width: 929px;
+  height: 522px;
 }
 
 .poster video {
-  display: none;
+  width: 929px;
+  height: 522px;
+}
+
+.poster img {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 18%;
 }
 
 .poster button {
   content: "";
   position: absolute;
+  z-index: 2;
   width: 65px;
   height: 65px;
-  top: calc(50% - 35px);
-  left: calc(50% - 38px);
+  top: 44%;
+  left: 64%;
   border: none;
   background-color: inherit;
   cursor: pointer;

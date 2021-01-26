@@ -1,29 +1,52 @@
 .location {
-  margin-top: -192px;
-  padding-top: 220px;
-
-  background-color: $white;
+  margin-top: 62px;
 
   text-align: center;
 }
 
 .location h3 {
+  margin-right: 10px;
+
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
-  letter-spacing: -0.005em;
+  letter-spacing: 0.4px;
 
   color: $titles;
 }
 
 .location p {
+  margin-right: 13px;
+
   font-weight: 400;
   font-size: 17px;
   line-height: 31px;
+  letter-spacing: 0.4px;
 
   color: $black-light;
 }
 
-.location img {
+.location__container {
+  position: relative;
+
   margin-top: 23px;
+  margin: 23px auto 22px auto;
+
+  width: 957px;
+  height: 530px;
+
+  background-color: transparent;
+}
+
+.location__container iframe {
+  width: 957px;
+  height: 530px;
+
+  margin-top: 17px;
+}
+
+.location img {
+  position: absolute;
+  z-index: -1;
+  top: 17px;
 }

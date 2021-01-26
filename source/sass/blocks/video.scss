@@ -1,15 +1,17 @@
 .video {
   padding: 90px;
 
-  background-color: $background-dark;
+  background-image: linear-gradient($background-dark 79%, $white 21%);
+
+  letter-spacing: 0.1px;
 
   text-align: center;
-  letter-spacing: -0.005em;
   color: $white;
 }
 
 .video__title {
   margin-bottom: 20px;
+  margin-right: 10px;
 
   font-weight: 600;
   font-size: 30px;
