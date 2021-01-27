@@ -2,6 +2,14 @@
   padding: 120px 9% 110px 9%;
 
   background-color: $background-light;
+
+  @media (max-width: $tablet-width) {
+    padding: 25px 8% 30px 8%;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 15px;
+  }
 }
 
 .types__title {
@@ -12,9 +20,18 @@
   text-align: center;
 
   color: $titles;
+
+  @media (max-width: $tablet-width) {
+
+    font-size: 24px;
+    line-height: 41px;
+  }
 }
 
 .types__list {
   margin-top: 50px;
-}
 
+  @media (max-width: $tablet-width) {
+    margin-top: 30px;
+  }
+}

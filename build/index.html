@@ -7,6 +7,9 @@
   <title>Магазин велосипедов</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="../fonts/open-sans-v18-latin-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/open-sans-v18-latin-600.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/open-sans-v18-latin-300.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/open-sans-v18-latin-700.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page">
@@ -67,6 +70,7 @@
             <source media="(max-width: 1023px)" type="image/webp" srcset="img/road-bike-mobile.webp 1x, img/road-bike-mobile@2x.webp 2x">
             <source media="(max-width: 1023px)" srcset="img/road-bike-mobile.jpg 1x, img/road-bike-mobile@2x.jpg 2x">
             <source type="image/webp" srcset="img/road-bike.webp 1x, img/road-bike@2x.webp 2x">
+              <!-- 1x: 342px; 2x: 684px -->
             <img src="img/road-bike.jpg" srcset="img/road-bike@2x.jpg 2x" width="342" height="503" alt="Фото дорожного велосипеда">
           </picture>
           <p>Дорожный велосипед</p>
@@ -76,6 +80,7 @@
             <source media="(max-width: 1023px)" type="image/webp" srcset="img/mountain-bike-mobile.webp 1x, img/mountain-bike-mobile@2x.webp 2x">
             <source media="(max-width: 1023px)" srcset="img/mountain-bike-mobile.jpg 1x, img/mountain-bike-mobile@2x.jpg 2x">
             <source type="image/webp" srcset="img/mountain-bike.webp 1x, img/mountain-bike@2x.webp 2x">
+              <!-- 1x: 342px; 2x: 684px -->
             <img src="img/mountain-bike.jpg" srcset="img/mountain-bike@2x.jpg 2x" width="342" height="566" alt="Фото горного велосипеда">
           </picture>
           <p>Горный велосипед</p>
@@ -85,6 +90,7 @@
             <source media="(max-width: 1023px)" type="image/webp" srcset="img/children-bike-mobile.webp 1x, img/children-bike-mobile@2x.webp 2x">
             <source media="(max-width: 1023px)" srcset="img/children-bike-mobile.jpg 1x, img/children-bike-mobile@2x.jpg 2x">
             <source type="image/webp" srcset="img/children-bike.webp 1x, img/children-bike@2x.webp 2x">
+              <!-- 1x: 342px; 2x: 684px -->
             <img src="img/children-bike.jpg" srcset="img/children-bike@2x.jpg 2x" width="342" height="513" alt="Фото детского велосипеда">
           </picture>
           <p>Детский велосипед</p>
@@ -103,13 +109,11 @@
           <source media="(max-width: 1023px)" type="image/webp" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
           <source media="(max-width: 1023px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
           <source type="image/webp" srcset="img/video.webp 1x, img/video@2x.webp 2x">
-          <img src="img/video.jpg" srcset="img/video@2x.jpg" width="929" height="522" alt="Видео про велосипеды">
+            <!-- 1x: 929px; 2x: 1858px -->
+          <img class="poster__picture" src="img/video.jpg" srcset="img/video@2x.jpg" width="929" height="522" alt="Видео про велосипеды">
         </picture>
-        <video width="929" height="522"></video>
+        <video class="poster__video" width="929" height="522"></video>
         <button type="button">
-          <svg role="img" width="65" height="65">
-            <use xlink:href="img/sprite.svg#play"></use>
-          </svg>
           <span class="visually-hidden">Запустить видео</span>
         </button>
       </div>
@@ -117,7 +121,7 @@
 
     <section class="location" id="contacts">
       <h3>Как нас найти?</h3>
-      <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая<br> Конюшенная, д. 19</p>
+      <p class="location__description">Мы находимся по адресу: Санкт-Петербург, ул. Большая<br> Конюшенная, д. 19</p>
       <div class="location__container">
         <picture>
           <source media="(max-width: 767px)" type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
@@ -125,9 +129,10 @@
           <source media="(max-width: 1023px)" type="image/webp" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
           <source media="(max-width: 1023px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
           <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x">
+            <!-- 1x: 957px; 2x: 1914px -->
           <img src="img/map.jpg" srcset="img/map@2x.jpg 2x" width="957" height="530" alt="Наш адрес: Санкт-Петербург, ул. Большая Конюшенная, д. 19">
         </picture>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1611654040656!5m2!1sru!2sru" width="957" height="530" frameborder="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1611654040656!5m2!1sru!2sru" width="957" height="530"></iframe>
       </div>
     </section>
   </main>
@@ -137,7 +142,7 @@
       <li>
         <a href="mailto:puteshestviemechta@gmail.ru">
           <svg class="mail" role="img" width="26" height="20" fill="none">
-            <use xlink:href="img/sprite.svg#mail"></use>
+            <use xlink:href="img/sprite.svg#icon-mail"></use>
           </svg>
           <span>puteshestviemechta@gmail.ru</span>
         </a>
@@ -145,7 +150,7 @@
       <li>
         <a href="tel:+749978468446">
           <svg class="phone" role="img" width="22" height="22" fill="none">
-            <use xlink:href="img/sprite.svg#phone"></use>
+            <use xlink:href="img/sprite.svg#icon-phone"></use>
           </svg>
           <span>+7 (499) -784-684-46</span>
         </a>

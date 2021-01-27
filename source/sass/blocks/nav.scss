@@ -1,15 +1,8 @@
 .nav {
-  // position: relative;
-
   max-width: 873px;
-  // margin: 0 auto;
 
   @media (max-width: $tablet-width) {
     margin: 0;
-  }
-
-  @media (max-width: $mobile-width) {
-    // max-width: 320px;
   }
 }
 
@@ -36,7 +29,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  // width: 100%;
 
   padding: 6px 3px 8px 0;
   margin: 0;
@@ -87,7 +79,7 @@
 .nav__list--mobile li::after {
   content: "";
   position: absolute;
-  background-image: url(../../img/arrow.svg);
+  background-image: url("../../img/arrow.svg");
   width: 25px;
   height: 25px;
   top: 18px;
@@ -102,10 +94,19 @@
   cursor: pointer;
 }
 
+.nav__list a:hover,
+.nav__list a:focus {
+  color: $accent;
+}
+
+.nav__list a:active {
+  border: 2px solid $accent;
+}
+
 .nav__button {
   display: none;
 
-  @media(max-width: $tablet-width) {
+  @media (max-width: $tablet-width) {
     display: block;
   }
 }
@@ -118,10 +119,9 @@
     right: 0;
     width: 50px;
     height: 50px;
-    // margin: 0;
 
     background-color: $accent;
-    background-image: url(../../img/menu.svg);
+    background-image: url("../../img/menu.svg");
     background-repeat: no-repeat;
     background-position: center;
     border: none;
@@ -138,7 +138,7 @@
     height: 50px;
 
     background-color: $white;
-    background-image: url(../../img/cross.svg);
+    background-image: url("../../img/cross.svg");
     background-repeat: no-repeat;
     background-position: center;
     border: none;

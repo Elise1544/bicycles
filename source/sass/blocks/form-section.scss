@@ -7,17 +7,13 @@
   right: 242px;
   width: 28%;
 
-  // margin-left: 144px;
-  // margin-top: 219px;
-
-  // width: 37%;
-
   text-align: center;
 
   @media (max-width: $tablet-width) {
     position: static;
     margin: 0;
     padding: 46px;
+    padding-bottom: 20px;
 
     width: 100%;
 
@@ -25,7 +21,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 45px 0;
+    padding: 45px 0 25px 0;
   }
 }
 

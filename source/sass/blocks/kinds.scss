@@ -7,44 +7,71 @@
   padding: 0;
 }
 
-.kinds__item:nth-of-type(3n+1)::before {
+.kinds__item:nth-of-type(3n + 1)::before {
   content: "";
   position: absolute;
   z-index: -1;
-  background-image: url(../../img/ellipse.svg);
+  border: 28px solid $accent;
+  border-radius: 50%;
   top: 156px;
   left: -60px;
   width: 180px;
   height: 180px;
+
+  @media (max-width: $tablet-width) {
+    border: 18px solid $accent;
+    width: 127px;
+    height: 127px;
+    top: 200px;
+    left: -35px;
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 202px;
+    left: -25px;
+  }
 }
 
-.kinds__item:nth-of-type(3n+2)::before,
-.kinds__item:nth-of-type(3n+2)::after {
+.kinds__item:nth-of-type(3n + 2)::before,
+.kinds__item:nth-of-type(3n + 2)::after {
   content: "";
   position: absolute;
-  background-image: url(../../img/rectangle.svg);
+  border: 8px solid $accent;
   width: 47px;
   height: 47px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
-.kinds__item:nth-of-type(3n+2)::before {
+.kinds__item:nth-of-type(3n + 2)::before {
   top: -18px;
   left: -19px;
 }
 
-.kinds__item:nth-of-type(3n+2)::after {
+.kinds__item:nth-of-type(3n + 2)::after {
   bottom: 55px;
   right: -24px;
 }
 
-.kinds__item:nth-of-type(3n+3)::after {
+.kinds__item:nth-of-type(3n + 3)::after {
   content: "";
   position: absolute;
-  background-image: url(../../img/ellipse-small.svg);
-  top: -30px;
+  border: 16px solid $accent;
+  border-radius: 50%;
+  top: -32px;
   right: -35px;
   width: 95px;
   height: 95px;
+
+  @media (max-width: $tablet-width) {
+    border: 14px solid $accent;
+    width: 68px;
+    height: 68px;
+    top: -20px;
+    right: -25px;
+  }
 }
 
 .kinds__item {
@@ -53,16 +80,43 @@
   z-index: 1;
 }
 
-.kinds__item:nth-of-type(3n+1) {
+.kinds__item:nth-of-type(3n + 1) {
   margin-top: 10px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
-.kinds__item:nth-of-type(3n+2) {
+.kinds__item:nth-of-type(3n + 2) {
   margin-top: 40px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 20px;
+  }
+}
+
+.kinds__item:nth-of-type(3n + 3) {
+  @media (max-width: $tablet-width) {
+    margin-top: 27px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 18px;
+  }
 }
 
 .kinds__item img {
   display: block;
+
+  @media (max-width: $tablet-width) {
+    width: 270px;
+    height: 300px;
+  }
 }
 
 .kinds__item p {
