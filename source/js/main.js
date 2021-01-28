@@ -28,6 +28,6 @@
         navList.classList.remove('nav__list--mobile');
       }
     });
-  };
+  }
 
 })();
