@@ -22,7 +22,7 @@
   }
 }
 
-.video__title {
+.video h3 {
   margin-bottom: 20px;
   margin-right: 10px;
 
@@ -41,7 +41,10 @@
   }
 }
 
-.video__description {
+.video p {
+  width: 33%;
+  margin: 0 auto;
+
   font-weight: 300;
   font-size: 16px;
   line-height: 28px;
@@ -56,7 +59,7 @@
   }
 }
 
-.video__description br {
+.video p br {
   @media (max-width: $tablet-width) {
     display: none;
   }

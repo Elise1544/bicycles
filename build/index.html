@@ -26,7 +26,6 @@
       </button>
     </nav>
 
-
   </header>
 
   <main class="page__main">
@@ -53,7 +52,7 @@
     </section>
 
     <section class="facts" id="facts">
-      <h3 class="facts__title">Несколько фактов о нас</h3>
+      <h3>Несколько фактов о нас</h3>
       <ol class="facts__list">
         <li>Самый широкий выбор велосипедов!</li>
         <li>Доставка велосипедов по всей России!</li>
@@ -63,34 +62,37 @@
     </section>
 
     <section class="types" id="types">
-      <h3 class="types__title">Виды велосипедов</h3>
+      <h3>Виды велосипедов</h3>
       <ul class="types__list kinds">
         <li class="kinds__item">
           <picture>
+            <!-- 1x: 270px; 2x: 540px-->
             <source media="(max-width: 1023px)" type="image/webp" srcset="img/road-bike-mobile.webp 1x, img/road-bike-mobile@2x.webp 2x">
-            <source media="(max-width: 1023px)" srcset="img/road-bike-mobile.jpg 1x, img/road-bike-mobile@2x.jpg 2x">
+            <!-- 1x: 342px; 2x: 684px -->
             <source type="image/webp" srcset="img/road-bike.webp 1x, img/road-bike@2x.webp 2x">
-              <!-- 1x: 342px; 2x: 684px -->
+            <!-- 1x: 342px; 2x: 684px -->
             <img src="img/road-bike.jpg" srcset="img/road-bike@2x.jpg 2x" width="342" height="503" alt="Фото дорожного велосипеда">
           </picture>
           <p>Дорожный велосипед</p>
         </li>
         <li class="kinds__item">
           <picture>
+            <!-- 1x: 270px; 2x: 540px-->
             <source media="(max-width: 1023px)" type="image/webp" srcset="img/mountain-bike-mobile.webp 1x, img/mountain-bike-mobile@2x.webp 2x">
-            <source media="(max-width: 1023px)" srcset="img/mountain-bike-mobile.jpg 1x, img/mountain-bike-mobile@2x.jpg 2x">
+            <!-- 1x: 342px; 2x: 684px -->
             <source type="image/webp" srcset="img/mountain-bike.webp 1x, img/mountain-bike@2x.webp 2x">
-              <!-- 1x: 342px; 2x: 684px -->
+            <!-- 1x: 342px; 2x: 684px -->
             <img src="img/mountain-bike.jpg" srcset="img/mountain-bike@2x.jpg 2x" width="342" height="566" alt="Фото горного велосипеда">
           </picture>
           <p>Горный велосипед</p>
         </li>
         <li class="kinds__item">
           <picture>
+            <!-- 1x: 270px; 2x: 540px-->
             <source media="(max-width: 1023px)" type="image/webp" srcset="img/children-bike-mobile.webp 1x, img/children-bike-mobile@2x.webp 2x">
-            <source media="(max-width: 1023px)" srcset="img/children-bike-mobile.jpg 1x, img/children-bike-mobile@2x.jpg 2x">
+            <!-- 1x: 342px; 2x: 684px -->
             <source type="image/webp" srcset="img/children-bike.webp 1x, img/children-bike@2x.webp 2x">
-              <!-- 1x: 342px; 2x: 684px -->
+            <!-- 1x: 342px; 2x: 684px -->
             <img src="img/children-bike.jpg" srcset="img/children-bike@2x.jpg 2x" width="342" height="513" alt="Фото детского велосипеда">
           </picture>
           <p>Детский велосипед</p>
@@ -99,18 +101,19 @@
     </section>
 
     <section class="video" id="video">
-      <h3 class="video__title">Видео про велосипеды</h3>
-      <p class="video__description">В этом видео мы подробно расскажем про<br> особенности выбора велосипеда для себя.
+      <h3>Видео про велосипеды</h3>
+      <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.
       </p>
       <div class="video__block poster">
         <picture>
+          <!-- 1x: 288px; 2x: 576px -->
           <source media="(max-width: 767px)" type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
-          <source media="(max-width: 767px)" srcset="img/video-mobile.jpg 1x, img/video-mobile@2x.jpg 2x">
+          <!-- 1x: 503px; 2x: 1006px -->
           <source media="(max-width: 1023px)" type="image/webp" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
-          <source media="(max-width: 1023px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <!-- 1x: 929px; 2x: 1858px -->
           <source type="image/webp" srcset="img/video.webp 1x, img/video@2x.webp 2x">
-            <!-- 1x: 929px; 2x: 1858px -->
-          <img class="poster__picture" src="img/video.jpg" srcset="img/video@2x.jpg" width="929" height="522" alt="Видео про велосипеды">
+          <!-- 1x: 929px; 2x: 1858px -->
+          <img src="img/video.jpg" srcset="img/video@2x.jpg" width="929" height="522" alt="Видео про велосипеды">
         </picture>
         <video class="poster__video" width="929" height="522"></video>
         <button type="button">
@@ -121,15 +124,16 @@
 
     <section class="location" id="contacts">
       <h3>Как нас найти?</h3>
-      <p class="location__description">Мы находимся по адресу: Санкт-Петербург, ул. Большая<br> Конюшенная, д. 19</p>
+      <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <div class="location__container">
         <picture>
+          <!-- 1x: 319px; 2x: 638px -->
           <source media="(max-width: 767px)" type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
-          <source media="(max-width: 767px)" srcset="img/map-mobile.jpg 1x, img/map-mobile@2x.jpg 2x">
+          <!-- 1x: 698px; 2x: 1396px -->
           <source media="(max-width: 1023px)" type="image/webp" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
-          <source media="(max-width: 1023px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <!-- 1x: 957px; 2x: 19144px -->
           <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x">
-            <!-- 1x: 957px; 2x: 1914px -->
+          <!-- 1x: 957px; 2x: 1914px -->
           <img src="img/map.jpg" srcset="img/map@2x.jpg 2x" width="957" height="530" alt="Наш адрес: Санкт-Петербург, ул. Большая Конюшенная, д. 19">
         </picture>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1611654040656!5m2!1sru!2sru" width="957" height="530"></iframe>
@@ -157,7 +161,7 @@
       </li>
     </ul>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

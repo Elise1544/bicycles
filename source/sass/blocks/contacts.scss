@@ -45,6 +45,7 @@
 
 .contacts__list a {
   display: inline-block;
+  vertical-align: middle;
   position: relative;
 
   padding: 15px;
@@ -62,21 +63,4 @@
 
 .contacts__list a:active {
   border: 2px solid $accent;
-}
-
-.mail {
-  position: absolute;
-  top: 16px;
-  left: 2px;
-
-  @media (max-width: $mobile-width) {
-    top: 18px;
-    left: 5px;
-  }
-}
-
-.phone {
-  position: absolute;
-  top: 13px;
-  left: 10px;
 }
