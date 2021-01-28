@@ -10,3 +10,21 @@
 
   background-color: $white;
 }
+
+.page__header {
+  position: absolute;
+  z-index: 1;
+  width: 873px;
+  height: auto;
+  top: 15px;
+  left: calc(50% - 436px);
+
+  @media (max-width: $tablet-width) {
+    position: static;
+    width: 100%;
+  }
+}
+
+.page__main {
+  position: relative;
+}
