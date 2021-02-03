@@ -58,7 +58,7 @@
 
 .poster button {
   content: "";
-  background-image: url("../../img/play.svg");
+  background-image: url("../img/play.svg");
   background-repeat: no-repeat;
   position: absolute;
   z-index: 2;
@@ -71,7 +71,7 @@
   cursor: pointer;
 
   @media (max-width: $tablet-width) {
-    background-image: url("../../img/play-tablet.svg");
+    background-image: url("../img/play-tablet.svg");
     width: 90px;
     height: 90px;
     top: calc(50% - 45px);
@@ -79,7 +79,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    background-image: url("../../img/play.svg");
+    background-image: url("../img/play.svg");
     width: 65px;
     height: 65px;
     top: calc(50% - 33px);
@@ -89,14 +89,14 @@
 
 .poster button:hover,
 .poster button:focus {
-  background-image: url("../../img/play-tablet.svg");
+  background-image: url("../img/play-tablet.svg");
   width: 90px;
   height: 90px;
   top: calc(50% - 45px);
   left: calc(50% - 45px);
 
   @media (max-width: $tablet-width) {
-    background-image: url("../../img/play.svg");
+    background-image: url("../img/play.svg");
     width: 65px;
     height: 65px;
     top: calc(50% - 33px);
@@ -104,7 +104,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    background-image: url("../../img/play-tablet.svg");
+    background-image: url("../img/play-tablet.svg");
     width: 90px;
     height: 90px;
     top: calc(50% - 45px);
