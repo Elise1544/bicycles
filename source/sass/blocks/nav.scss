@@ -11,6 +11,13 @@
   flex-direction: column;
 }
 
+.nav--js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 .nav::after {
   content: "";
   position: absolute;
@@ -106,10 +113,6 @@
 
 .nav__button {
   display: none;
-
-  @media (max-width: $tablet-width) {
-    display: block;
-  }
 }
 
 .nav__button--closed,

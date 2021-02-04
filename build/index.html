@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Магазин велосипедов</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="../fonts/open-sans-v18-latin-regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="../fonts/open-sans-v18-latin-600.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="../fonts/open-sans-v18-latin-300.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="../fonts/open-sans-v18-latin-700.woff2" as="font" crossorigin="anonymous">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="preload" href="fonts/open-sans-v18-latin-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/open-sans-v18-latin-600.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/open-sans-v18-latin-300.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/open-sans-v18-latin-700.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page">
@@ -32,7 +33,7 @@
     <h1 class="visually-hidden">Магазин велосипедов</h1>
 
     <section class="main-information">
-      <img src="img/logo.svg" width="68" height="20" alt="Логотип магазина">
+      <a><img src="img/logo.svg" width="68" height="20" alt="Логотип магазина"></a>
       <h2>Мы продаем велосипеды</h2>
       <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
     </section>
@@ -40,12 +41,13 @@
     <section class="form-section">
       <h3 class="visually-hidden">Форма для подбора велосипеда</h3>
       <p>Заполните поля ниже и мы<br> подберем велосипед Вашей мечты</p>
-      <form class="form" action="https://echo.htmlacademy.ru" method="GET">
+      <form class="form" action="https://echo.htmlacademy.ru" method="GET" autocomplete="off">
         <label>
           <input type="text" name="name" placeholder="Введите Ваше Имя" required="">
         </label>
         <label>
-          <input type="tel" pattern="[+,0-9]{11,12}" name="phone" placeholder="Введите Ваш номер телефона" required="">
+          <input class="form__phone" type="tel" pattern="[+,0-9]{11,12}" name="phone" placeholder="Введите Ваш номер телефона" required="">
+          <!-- <input class="form__phone" type="tel" name="phone" placeholder="Введите Ваш номер телефона" required> -->
         </label>
         <button type="submit">Подобрать велосипед мечты</button>
       </form>
@@ -116,9 +118,9 @@
           <img src="img/video.jpg" srcset="img/video@2x.jpg" width="929" height="522" alt="Видео про велосипеды">
         </picture>
         <video class="poster__video" width="929" height="522"></video>
-        <button type="button">
+        <a href="#">
           <span class="visually-hidden">Запустить видео</span>
-        </button>
+        </a>
       </div>
     </section>
 

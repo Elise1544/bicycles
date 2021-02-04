@@ -1,14 +1,14 @@
 .types {
-  padding: 120px 9% 110px 9%;
+  padding: 120px 9% 105px 9%;
 
   background-color: $background-light;
 
   @media (max-width: $tablet-width) {
-    padding: 25px 8% 30px 8%;
+    padding: 25px 8% 8px 8%;
   }
 
   @media (max-width: $mobile-width) {
-    padding-bottom: 15px;
+    padding: 25px 5% 0 5%;
   }
 }
 
@@ -29,9 +29,13 @@
 }
 
 .types__list {
-  margin-top: 50px;
+  margin-top: 45px;
 
   @media (max-width: $tablet-width) {
-    margin-top: 30px;
+    margin-top: 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 13px;
   }
 }
